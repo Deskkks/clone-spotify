@@ -49,6 +49,11 @@ a {
   border-bottom: 1px solid #aaaaaa;
 }
 
+.links span {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
 nav {
   margin-bottom: 30px;
 }
@@ -56,7 +61,7 @@ nav {
 .color {
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  margin: 12px 0;
 }
 
 .color > *{
@@ -71,14 +76,35 @@ nav {
   color: #fff;
 }
 
+.myPlaylists {
+  font-weight: 600;
+  overflow-y: auto;
+  height: 80px;
+}
 
+.myPlaylists::-webkit-scrollbar {
+  width: 8px;
+}
+
+.myPlaylists::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.myPlaylists::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+
+.myPlaylists:hover::-webkit-scrollbar-thumb {
+  background-color: #404040;
+}
 
 img {
   width: 100%;
+  border-radius: 8px;
 }
 
 main {
-  background-color: #111111;
+  background-color: #121212fe;
   color: #fff;
   width: 84%;
   padding: 10px;
@@ -95,7 +121,7 @@ main > * {
 }
 
 .album {
-  background-color: #232323;
+  background-color: #181818fe;
   padding: 10px;
   margin: 10px 5px;
   border-radius: 8px;
@@ -112,7 +138,8 @@ main > * {
 }
 
 .album > p {
-  opacity: 0.8;
+  opacity: 0.6;
+  font-size: 13px;
 }
 
 .album {
@@ -134,4 +161,117 @@ main > * {
   right: 22px;
   opacity: 0;
   transition: 0.5s;
+}
+
+.player {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  height: 80px;
+  background-color: #181818fe;
+  border-top: 1px solid #434343;
+  bottom: 0;
+}
+
+.capa {
+  width: 16%;
+  position: absolute;
+  bottom: 80px;
+}
+
+.artista {
+  display: flex;
+  color: #fff;
+  height: 100%;
+  font-size: 11px;
+  padding: 0 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.artista > p {
+  margin-top: 4px;
+  opacity: 0.6;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+
+.player span {
+  color: #fff;
+  font-size: 18px;
+}
+
+.contF {
+  display: flex;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.cansei {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.main-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-player > * {
+  margin: 5px;
+}
+
+.main-player > * > span {
+  color: #aaaaaa;
+  font-size: 24px;
+}
+
+.like > span, .aleatorio > span {
+  color: #1DB954;
+}
+
+.playMusic > span {
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 35px;
+}
+
+.progress-bar {
+  background-color: #515151;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+}
+
+.progresso {
+  background-color: #aaaaaa;
+  height: 5px;
+  width: 50%;
+  border-radius: 30px;
+}
+
+.volume-bar {
+  background-color: #515151;
+  width: 100px;
+  height: 5px;
+  border-radius: 30px;
+}
+
+.volume {
+  background-color: #aaaaaa;
+  height: 5px;
+  width: 50%;
+  border-radius: 30px;
 }
